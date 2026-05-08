@@ -76,15 +76,20 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 40vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
+}
+
+.logo {
+  font-family: "Norse"
 }
 
 header footer {
   margin-top: auto;
   color: white;
   align-self: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 main {
@@ -92,8 +97,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-left: 10px;
+    justify-content: center;;
 }
 
 .picture {
@@ -111,9 +115,57 @@ main {
 }
 
 .dummy {
-  max-width:500px;
+  width: 40vw;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 .dummy p{
   margin-bottom: 10px;
 }
 
+.container {
+  display: flex;
+  box-sizing: border-box;
+  border: 2px solid rgb(192, 190, 190);
+  padding: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.container p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: min(40vw, 650px);
+}
+.form {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  width: max(200px, 50%);
+}
+
+input {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+button {
+  padding: 5px;
+  border-radius: 5%;
+  font-size: 0.8rem;
+  background-color:rgb(83, 90, 83);
+  color:white;
+  margin-bottom: 10px;
+}
