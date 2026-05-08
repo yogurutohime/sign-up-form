@@ -239,3 +239,12 @@ button {
   margin-bottom: 10px;
   font-family: "Quicksand"
 }
+
+input[type="password"]:invalid {
+  border-color: red;
+}
+
+input:focus {
+  border-color:blue;
+  box-shadow:2px 2px black;
+}
