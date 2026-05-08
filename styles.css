@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('Norse.woff2') format('woff2'),
+        url('Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+*:not(dialog) {
+  margin: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+/* make sure form style consistent with the rest */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+/* consistent text field for form */
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-image: url(quan-jing-mmfqg90Ujb8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header footer {
+  margin-top: auto;
+  color: white;
+  align-self: center;
+}
+
+main {
+    width:60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.picture {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: 20vh;
+  gap: 1vw;
+  padding: 15px;
+  color: white;
+  font-size: 3rem;
+}
+
+.dummy {
+  max-width:500px;
+}
+.dummy p{
+  margin-bottom: 10px;
+}
+
